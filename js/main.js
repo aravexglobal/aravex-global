@@ -73,5 +73,31 @@
     });
 
 
-})(jQuery);
+    // Service Booking Form Submission
+    $('form').on('submit', function(e) {
+        var submitBtn = $(this).find('button:contains("Request Service")');
+        if (submitBtn.length > 0) {
+            e.preventDefault();
+            
+            var vehicleType = $(this).find('select[aria-label="Select Vehicle Type"] option:selected').text();
+            var pickup = $(this).find('input[placeholder*="pickup"]').val() || 'Not specified';
+            var destination = $(this).find('input[placeholder*="destination"]').val() || 'Not specified';
+            var startDate = $(this).find('input[type="date"]').eq(0).val() || 'Not specified';
+            var startTime = $(this).find('select').eq(1).find('option:selected').text();
+            var endDate = $(this).find('input[type="date"]').eq(1).val() || 'Not specified';
+            var endTime = $(this).find('select').eq(2).find('option:selected').text();
+            
+            var message = "New Service Booking Request:\n" +
+                          "- Vehicle Type: " + vehicleType + "\n" +
+                          "- Pick Up Location: " + pickup + "\n" +
+                          "- Destination/Site: " + destination + "\n" +
+                          "- Start Date & Time: " + startDate + " at " + startTime + "\n" +
+                          "- End Date & Time: " + endDate + " at " + endTime;
+            
+            var encodedMessage = encodeURIComponent(message);
+            var whatsappUrl = "https://wa.me/971542033507?text=" + encodedMessage;
+            window.open(whatsappUrl, '_blank');
+        }
+    });
 
+})(jQuery);
