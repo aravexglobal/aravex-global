@@ -97,7 +97,10 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a href="http://aravexglobal.com" class="navbar-brand p-0">
-                    <h1 class="display-6 text-primary"><img src="img/logo.png" alt="Logo">Aravex Global</h1>
+                    <h1 class="display-6 text-primary m-0 d-flex align-items-center">
+                        <img src="img/logo.png" alt="Logo" class="me-3" style="height: 50px;">
+                        <span>Aravex Global</span>
+                    </h1>
 
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -108,7 +111,6 @@
                         <a href="http://aravexglobal.com" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="service.html" class="nav-item nav-link active">Services</a>
-                        <a href="vehicle.html" class="nav-item nav-link">Fleet</a>
                         <a href="blog.html" class="nav-item nav-link">Blog</a>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
@@ -256,38 +258,35 @@
                         <form>
                             <div class="row g-3">
                                 <div class="col-12">
-                                    <select class="form-select" aria-label="Select Vehicle Type">
-                                        <option selected>Select Vehicle Type</option>
-                                        <option value="1">5 Seater</option>
-                                        <option value="2">7 Seater</option>
-                                        <option value="3">14 Seater Van</option>
-                                        <option value="4">33 Seater Bus</option>
-                                        <option value="5">66 Seater Bus</option>
-                                        <option value="6">Double Cabin Pickup</option>
-                                        <option value="7">Not Sure Yet</option>
+                                    <select class="form-select" aria-label="Select Project Service">
+                                        <option selected>Select Project Service</option>
+                                        <option value="1">General Contracting</option>
+                                        <option value="2">Civil & Infrastructure</option>
+                                        <option value="3">Site Management</option>
+                                        <option value="4">Workforce Logistics</option>
+                                        <option value="5">Resource Coordination</option>
+                                        <option value="6">Other Project Services</option>
                                     </select>
                                 </div>
                                 <div class="col-12">
                                     <div class="input-group">
                                         <div class="d-flex align-items-center bg-light text-body rounded-start p-2">
-                                            <span class="fas fa-map-marker-alt"></span> <span class="ms-1">Pick Up
-                                                Location</span>
+                                            <span class="fas fa-map-marker-alt"></span> <span class="ms-1">Project Site Location</span>
                                         </div>
                                         <input class="form-control" type="text"
-                                            placeholder="Enter pickup location or project site"
-                                            aria-label="Enter pickup location or project site">
+                                            placeholder="Enter project site or work location"
+                                            aria-label="Enter project site or work location">
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="input-group">
                                         <div class="d-flex align-items-center bg-light text-body rounded-start p-2">
-                                            <span class="fas fa-map-marker-alt"></span><span class="ms-1 text-truncate"
-                                                style="max-width: 150px;">Destination / Site
-                                                Location</span>
+                                            <span class="fas fa-info-circle"></span><span class="ms-1 text-truncate"
+                                                style="max-width: 150px;">Service Requirements</span>
                                         </div>
                                         <input class="form-control" type="text"
-                                            placeholder="Enter destination or work site"
-                                            aria-label="Enter destination or work site">
+                                            placeholder="Describe your project requirements"
+                                            aria-label="Describe your project requirements">
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -328,7 +327,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-light w-100 py-2">Request Service</button>
+                                    <button class="btn btn-light w-100 py-2">Request Quote</button>
                                     <p class="text-white text-center mt-2 mb-0" style="font-size: 0.85rem;">Our team will
                                         contact you during
                                         business hours.</p>
@@ -409,6 +408,210 @@
     </style>
 
 
+    <!-- CTA Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="rounded p-5" style="background: linear-gradient(rgba(31, 46, 78, 0.9), rgba(31, 46, 78, 0.9)), url('img/carousel-2.jpg') center center no-repeat; background-size: cover;">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-7 text-center text-lg-start">
+                        <h1 class="display-4 text-white mb-3">GET YOUR PROJECT QUOTE</h1>
+                        <p class="text-white-50 mb-0">Professional contracting and transportation solutions tailored to your specific requirements.</p>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-end gap-3">
+                            <a href="contact.html" class="btn btn-light rounded-pill py-3 px-4">Request Quote Now</a>
+                            <a href="tel:+97125171125" class="btn btn-outline-light rounded-pill py-3 px-4">Call Us Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CTA End -->
+
+    <!-- Fleet Start -->
+    <div class="container-fluid categories py-5" id="fleet">
+        <div class="container">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                <h1 class="display-5 text-capitalize mb-3">Our <span class="text-primary">Fleet</span></h1>
+                <p class="mb-0">We maintain various types of vehicles to meet different operational and transportation
+                    requirements.</p>
+            </div>
+            <div class="categories-carousel owl-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="categories-item p-4">
+                    <div class="categories-item-inner">
+                        <div class="categories-img rounded-top">
+                            <img src="img/car-1.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="categories-content rounded-bottom p-4">
+                            <h4>66 Seater Buses</h4>
+                            <div class="mb-4">
+                                <h4 class="bg-white text-primary rounded-pill py-2 px-4 mb-0">High Capacity</h4>
+                            </div>
+                            <p class="mb-0">Large capacity transportation for industrial sites and major projects.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="categories-item p-4">
+                    <div class="categories-item-inner">
+                        <div class="categories-img rounded-top">
+                            <img src="img/car-2.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="categories-content rounded-bottom p-4">
+                            <h4>33 Seater Buses</h4>
+                            <div class="mb-4">
+                                <h4 class="bg-white text-primary rounded-pill py-2 px-4 mb-0">Mid Range</h4>
+                            </div>
+                            <p class="mb-0">Optimal sizing for staff transportation and site crew movement.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="categories-item p-4">
+                    <div class="categories-item-inner">
+                        <div class="categories-img rounded-top">
+                            <img src="img/car-3.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="categories-content rounded-bottom p-4">
+                            <h4>14 Seater Vans</h4>
+                            <div class="mb-4">
+                                <h4 class="bg-white text-primary rounded-pill py-2 px-4 mb-0">Efficient</h4>
+                            </div>
+                            <p class="mb-0">Ideal for smaller groups, airport transfers, and corporate teams.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="categories-item p-4">
+                    <div class="categories-item-inner">
+                        <div class="categories-img rounded-top">
+                            <img src="img/car-4.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="categories-content rounded-bottom p-4">
+                            <h4>7 Seater Vehicles</h4>
+                            <div class="mb-4">
+                                <h4 class="bg-white text-primary rounded-pill py-2 px-4 mb-0">Versatile</h4>
+                            </div>
+                            <p class="mb-0">Multi-purpose vehicles for flexible team transportation needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="categories-item p-4">
+                    <div class="categories-item-inner">
+                        <div class="categories-img rounded-top">
+                            <img src="img/car-5.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="categories-content rounded-bottom p-4">
+                            <h4>5 Seater Vehicles</h4>
+                            <div class="mb-4">
+                                <h4 class="bg-white text-primary rounded-pill py-2 px-4 mb-0">Corporate</h4>
+                            </div>
+                            <p class="mb-0">Professional sedans for corporate staff and executive movement.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="categories-item p-4">
+                    <div class="categories-item-inner">
+                        <div class="categories-img rounded-top">
+                            <img src="img/car-6.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="categories-content rounded-bottom p-4">
+                            <h4>Double Cabin Pickups</h4>
+                            <div class="mb-4">
+                                <h4 class="bg-white text-primary rounded-pill py-2 px-4 mb-0">Logistics</h4>
+                            </div>
+                            <p class="mb-0">Double cabin utility vehicles for site logistics and material support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fleet Features & Safety Measures -->
+            <div class="row g-5 mt-5">
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="bg-light p-5 rounded">
+                        <h2 class="display-6 mb-4 text-capitalize">Fleet <span class="text-primary">Features</span></h2>
+                        <div class="row g-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="btn-primary btn-md-square rounded-circle me-3"><i
+                                            class="fa fa-map-marker-alt"></i></div>
+                                    <h6 class="mb-0">GPS Tracking</h6>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="btn-primary btn-md-square rounded-circle me-3"><i
+                                            class="fa fa-snowflake"></i></div>
+                                    <h6 class="mb-0">Air Conditioned</h6>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="btn-primary btn-md-square rounded-circle me-3"><i
+                                            class="fa fa-chair"></i></div>
+                                    <h6 class="mb-0">Comfortable Seating</h6>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="btn-primary btn-md-square rounded-circle me-3"><i
+                                            class="fa fa-tools"></i></div>
+                                    <h6 class="mb-0">Regular Maintenance</h6>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="btn-primary btn-md-square rounded-circle me-3"><i
+                                            class="fa fa-broom"></i></div>
+                                    <h6 class="mb-0">Clean Fleet</h6>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="btn-primary btn-md-square rounded-circle me-3"><i
+                                            class="fa fa-check-circle"></i></div>
+                                    <h6 class="mb-0">Operational Readiness</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.1s">
+                    <div class="p-5">
+                        <h2 class="display-6 mb-4 text-capitalize">Safety <span class="text-primary">Measures</span>
+                        </h2>
+                        <ul class="list-unstyled">
+                            <li class="mb-3 d-flex align-items-start">
+                                <i class="fa fa-check text-primary me-3 mt-1"></i>
+                                <h5 class="mb-0">Experienced and trained drivers</h5>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                <i class="fa fa-check text-primary me-3 mt-1"></i>
+                                <h5 class="mb-0">Routine vehicle maintenance procedures</h5>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                <i class="fa fa-check text-primary me-3 mt-1"></i>
+                                <h5 class="mb-0">Regular inspection and safety checks</h5>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                <i class="fa fa-check text-primary me-3 mt-1"></i>
+                                <h5 class="mb-0">Operational compliance support</h5>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                <i class="fa fa-check text-primary me-3 mt-1"></i>
+                                <h5 class="mb-0">Preventive maintenance scheduling</h5>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                <i class="fa fa-check text-primary me-3 mt-1"></i>
+                                <h5 class="mb-0">Safety-focused transportation practices</h5>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fleet End -->
+
     <!-- Footer Start -->
     <div class="container-fluid footer py-5 mt-5 wow fadeIn" data-wow-delay="0.2s">
         <div class="container py-5">
@@ -432,8 +635,8 @@
                     <div class="footer-item d-flex flex-column">
                         <h4 class="text-white mb-4">Quick Links</h4>
                         <a href="about.html"><i class="fas fa-angle-right me-2"></i> About</a>
-                        <a href="vehicle.html"><i class="fas fa-angle-right me-2"></i> Cars</a>
-                        <a href="vehicle.html"><i class="fas fa-angle-right me-2"></i> Car Types</a>
+                        <a href="#fleet"><i class="fas fa-angle-right me-2"></i> Fleet</a>
+                        <a href="#fleet"><i class="fas fa-angle-right me-2"></i> Fleet Features</a>
                         <a href="team.html"><i class="fas fa-angle-right me-2"></i> Team</a>
                         <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact us</a>
                         <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
